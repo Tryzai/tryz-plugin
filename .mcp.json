@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tryz": {
+      "type": "http",
+      "url": "https://tryz.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "tryz",
+  "owner": {
+    "name": "David Forsher"
+  },
+  "plugins": [
+    {
+      "name": "tryz",
+      "source": "./",
+      "description": "Tryz connector and the skill that makes your agent check your Playbook before it acts."
+    }
+  ],
+  "description": "Tryz: connect your AI agent to your personal Playbook"
+}
