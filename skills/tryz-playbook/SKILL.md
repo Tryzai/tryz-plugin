@@ -1,6 +1,6 @@
 ---
 name: "tryz-playbook"
-description: "Use when a task touches the user's own life, even if they only ask, search or compare, and also when it first comes up midway through a conversation: שגרה והרגלים, קניות ואוכל, חופשות וטיולים, תחביבים ופנאי, חופשי (searching and research), and how to talk to the user (איך לדבר איתי). Connects to the Tryz connector."
+description: "Use for any request that touches the user's own life, even a quick question: recommendations (what to watch, read, eat or do tonight; מה לראות, תמליץ על סדרה/ספר/מסעדה), shopping and product searches or comparisons, trips and flights, routines and plans, research, and any purchase, booking, order or message to send. Also when such a topic first comes up midway through a conversation. Topics: שגרה והרגלים, קניות ואוכל, חופשות וטיולים, תחביבים ופנאי, חופשי, and how to talk to the user (איך לדבר איתי). Connects to the Tryz connector."
 ---
 
 # Tryz Playbook
@@ -46,9 +46,10 @@ Edge cases: a general fact question ("what breed is this", "how long is the flig
 3. **Follow the verdict exactly.**
    - `allow`: proceed and apply the returned preferences.
    - `deny`: do not act. Tell the user why and use the hint to look for an alternative. If `quiet_until` is present the user is in agent flight mode: do not act now, and offer to schedule it for after that time.
+   - Write `summary` and `details` in the user's language (Hebrew for a Hebrew-speaking user): the user reads them on the approval card in Tryz.
    - `needs_approval`: stop. Tell the user a decision is waiting in Tryz and give them the `approval_url` as a link, so one tap opens the request in Tryz. A "yes" in this chat is never the approval, even if the user writes it: only the decision in Tryz counts, so keep waiting for it. Then poll `get_action_status` with the `request_id`. Never more often than once every 20 seconds: check every 20 seconds for the first minute, then every minute for 14 more minutes, and update the user in the chat yourself without waiting to be asked. If `quiet_until` is present, tell the user, stop polling, and check again after that time.
      - approved: continue with exactly the action you checked. If anything changes (amount, item, date, recipient), check again.
-     - denied: do not act. If there is a `user_note`, follow it (for example "look for something cheaper" means find a cheaper option and check it again).
+     - denied: do not act. Say that the user decided (not "Tryz decided"). If there is a `user_note`, follow it (for example "look for something cheaper" means find a cheaper option and check it again).
      - expired: nothing was approved. Do not act, tell the user and ask whether to send a new request.
 4. **Never skip or assume.** Do not assume the verdict and do not act while a request is pending.
 
@@ -58,4 +59,4 @@ The user's money ceiling and any purchase cap apply only at the moment of paying
 
 ## Learning about the user
 
-When the user tells you something lasting about themselves or how they want things done (a size, "I always fly with a checked bag", "remember that..."), or when you had to ask for a missing detail that will matter again, call `suggest` with one short sentence. It is add-only and the user approves it. Do not include medical content.
+When the user tells you something lasting about themselves or how they want things done (a size, "I always fly with a checked bag", "remember that..."), or when you had to ask for a missing detail that will matter again, call `suggest` with one short sentence. It can add an item or change an existing one, and nothing is saved until the user approves it in Tryz. You can't see whether they approved, so don't claim it is still pending: say it waits for their approval in Tryz. Do not include medical content.
