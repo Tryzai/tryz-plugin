@@ -35,7 +35,7 @@ Tryz stores only what you put in your Playbook and the agent requests it checks 
 
 ## Support
 
-support@tryz.ai · [tryz.ai/help](https://tryz.ai/help)
+tryzai.support@gmail.com · [tryz.ai/help](https://tryz.ai/help)
 
 ## License
 
