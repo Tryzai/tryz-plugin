@@ -1,7 +1,7 @@
 {
   "name": "tryz",
   "displayName": "Tryz",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Tryz connects your AI agent to your personal Playbook, the rules and info you want every agent to follow. Includes the Tryz connector and a skill that tells the agent when to use it.",
   "author": {
     "name": "David Forsher",
@@ -18,5 +18,7 @@
     "approvals",
     "shopping",
     "agents"
-  ]
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://tryz.ai/privacy"
 }
