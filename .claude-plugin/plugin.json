@@ -1,15 +1,15 @@
 {
   "name": "tryz",
   "displayName": "Tryz",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Tryz connects your AI agent to your personal Playbook, the rules and info you want every agent to follow. Includes the Tryz connector and a skill that tells the agent when to use it.",
   "author": {
-    "name": "David Forsher",
+    "name": "Tryz",
     "email": "tryzai.support@gmail.com",
     "url": "https://tryz.ai"
   },
   "homepage": "https://tryz.ai",
-  "repository": "https://github.com/davidforsher/tryz-plugin",
+  "repository": "https://github.com/Tryzai/tryz-plugin",
   "license": "MIT",
   "keywords": [
     "playbook",
