@@ -1,8 +1,8 @@
 {
   "name": "tryz",
   "displayName": "Tryz",
-  "version": "0.2.5",
-  "description": "Tryz connects your AI agent to your personal Playbook, the rules and info you want every agent to follow. Includes the Tryz connector and a skill that tells the agent when to use it.",
+  "version": "0.2.6",
+  "description": "Your personal Playbook for every AI agent: Claude reads your rules before it acts and checks purchases, bookings and messages with you first.",
   "author": {
     "name": "Tryz",
     "email": "tryzai.support@gmail.com",
