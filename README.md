@@ -19,7 +19,7 @@ Tryz is your personal Playbook for every AI agent: the rules, preferences and in
 ## Setup
 
 1. Create a free account at [tryz.ai](https://tryz.ai) and build your Playbook.
-2. In Claude, add the plugin from the directory (or in Claude Code: `claude plugin marketplace add davidforsher/tryz-plugin`, then `claude plugin install tryz@tryz`).
+2. In Claude, add the plugin from the directory (or in Claude Code: `claude plugin marketplace add Tryzai/tryz-plugin`, then `claude plugin install tryz@tryz`).
 3. Connect Tryz and sign in. On the consent screen, choose which topics this agent may see.
 4. Start a new chat and ask for something, for example to compare running shoes or order dinner.
 
