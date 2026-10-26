@@ -1,8 +1,8 @@
 {
   "name": "tryz",
   "displayName": "Tryz",
-  "version": "0.2.6",
-  "description": "Your personal Playbook for every AI agent: Claude reads your rules before it acts and checks purchases, bookings and messages with you first.",
+  "version": "0.2.7",
+  "description": "Your personal Playbook for every AI agent: your agent reads your rules before it acts and checks purchases, bookings and messages with you first.",
   "author": {
     "name": "Tryz",
     "email": "tryzai.support@gmail.com",
