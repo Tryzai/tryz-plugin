@@ -1,7 +1,7 @@
 {
   "name": "tryz",
   "displayName": "Tryz",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Your personal Playbook for every AI agent: your agent reads your rules before it acts and checks purchases, bookings and messages with you first.",
   "author": {
     "name": "Tryz",
