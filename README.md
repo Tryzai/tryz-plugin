@@ -2,6 +2,8 @@
 
 Tryz is your personal Playbook for every AI agent: the rules, preferences and info you want every agent to follow when it acts for you (sizes, budget, kosher, Shabbat, tone, a spending ceiling). You set it once at [tryz.ai](https://tryz.ai), and every connected agent reads it and checks its actions against it. Tryz never performs or approves actions itself: it returns an instruction to proceed or stop, and you decide in Tryz.
 
+It connects Claude to the Tryz connector at `https://tryz.ai/mcp`: your Playbook, your Tryz skills, and cards that show what your agent read and what it asks you to approve.
+
 ## What's inside
 
 - `.mcp.json`: the Tryz connector, a remote MCP server at `https://tryz.ai/mcp` (OAuth sign-in to your Tryz account).
